@@ -13,16 +13,30 @@ namespace BBDBank.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult ChallengePanel()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult ChallengeList()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Available challenges.";
+
+            return View();
+        }
+
+        public IActionResult CreateChallenge()
+        {
+            ViewData["Message"] = "Make a challenge";
+
+            return View();
+        }
+
+        public IActionResult DoChallenge()
+        {
+            ViewData["Message"] = "Compete";
 
             return View();
         }
